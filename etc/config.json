@@ -1,0 +1,56 @@
+{
+    "inbounds": [
+    {
+      "port": 8081,
+      "listen":"0.0.0.0",
+      "protocol": "vless",
+      "settings": {
+        "decryption": "none",
+        "clients": [
+          {
+            "id": "8b70331c-d22d-49a3-823a-bc89fddfaaa6"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+	    "security": "none",
+        "wsSettings": {
+        "path": "/wr6jXPA9"
+        }
+      }
+    },
+    {
+      "port": 8082,
+      "listen": "0.0.0.0",
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "8b70331c-d22d-49a3-823a-bc89fddfaaa6",
+			"alterId": 0
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "/VHwAy9Hm"
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "tag": "direct"
+    },
+    {
+      "protocol": "blackhole",
+      "tag": "block"
+    }
+  ],
+  "transport": {},
+  "stats": {},
+  "reverse": {}
+}
